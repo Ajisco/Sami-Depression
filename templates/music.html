@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+   <meta name="Sami.com" content="AI App for depression">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>music</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="{{url_for('static', filename='assets/css/bootstrap.min.css')}}" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+
+
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+     <link rel="stylesheet" href="{{url_for('static', filename='assets/css/cover.css')}}" />
+
+     <link href="//db.onlinewebfonts.com/c/4e6177b918ba7f280b5db111d868cc94?family=Larsseit+Thin" rel="stylesheet" type="text/css"/>
+
+  </head>
+  <body class="d-flex h-100 text-center text-white" style="background-color:#070838;">
+<div class="cover-container d-flex w-100 h-100 p-4 mx-auto flex-column">
+
+<header class="mb-auto">
+    <div>
+     
+    </div>
+  </header>
+
+  <main class="px-3">
+
+
+    <h1>{{name}}, your <span style="color:#E4542A;"><i>
+
+    {%if music == "0"%}
+    Afrobeats
+
+    {%elif music == "1"%}
+    Indie Folk
+
+    {%elif music == "2"%}
+    Rock
+
+   {%elif music == "3"%}
+    Rhythm and Blues
+
+   {%elif music == "4"%}
+    Qur'anic Recitations
+
+    {%elif music == "5"%}
+    Gospel Music
+
+    {%endif%}
+
+  </i></span> playlist is ready!</h1>
+
+    <br><br>
+
+
+     <div class="col-12" style="text-align:center;">
+                    <p class="lead"><a href="/" style="color:#E4542A; padding-right: 40px; text-decoration: none;"> <strong>Back home</strong>  </a>
+
+
+      {%if music == "0"%}
+     {%if data == "High signs of depression "%} 
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBJbbcdRN9n3CGInAt4qSVpd&feature=share
+" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+     
+     {%elif data == "Medium/High "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBJ7TAYKCkF66dGUT2Gr8izR&feature=share
+" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "Low signs of despression "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBIS7viHBsFxqw4ubCPnmKdP&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "very Low/low Signs "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBLdGa8udqK2n7dvNLwlIdJ9&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%else%}
+      <a href="#" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%endif%}
+
+
+
+
+      {%elif music == "1"%}
+     {%if data == "High signs of depression "%} 
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBKv0urAdDvjOP1wcKNf4t-P&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+     
+     {%elif data == "Medium/High "%}
+
+      <a href="
+https://music.youtube.com/playlist?list=PLruOYdHlYTBLBKmljup0pFik2G8-EAM-M&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "Low signs of despression "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBILIIDsqE-aHb5X6Ybu_FP0&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "very Low/low Signs "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBLaPFDCllmo8YDtPLoIhPBk&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%else%}
+      <a href="#" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%endif%}
+
+
+
+
+
+
+       {%elif music == "2"%}
+      {%if data == "High signs of depression "%} 
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBJz4bpl26AUJVEqwoOaeJgy&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+     
+     {%elif data == "Medium/High "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBIgB3Z597gm4mJMp9NDLZMb&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "Low signs of despression "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBLMhoUibeI4P9Q6dYridmfu&feature=share
+" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "very Low/low Signs "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBKTpslyxQxwwH3qSlEhtYvu&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%else%}
+      <a href="#" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%endif%}
+
+
+
+
+      {%elif music == "3"%}
+     {%if data == "High signs of depression "%} 
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBJ2C-4ZVTMzHGir3A3uE3EK&feature=share
+" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+     
+     {%elif data == "Medium/High "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBI2_VMLxyLqF037Dny68f4X&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "Low signs of despression "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBI-xGAn-N0plVEvVisMDyLC&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "very Low/low Signs "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBJ5X7fqdT_r-aeQqtSS0Wyw&feature=share
+" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%else%}
+      <a href="#" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%endif%}
+
+
+
+
+
+
+
+       {%elif music == "4"%}
+     {%if data == "High signs of depression "%} 
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBIaTF1ZKaXzV79EWM2HnIJ2&feature=share
+
+" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+     
+     {%elif data == "Medium/High "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBKbbxbYQeM8i9S_8aQc1WAI&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "Low signs of despression "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBJ72nHh01VA6FY9ZNTlvIqx&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "very Low/low Signs "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBICFXbNsffMArxCDiA4tqfB&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%else%}
+      <a href="#" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%endif%}
+
+
+
+
+      {%else%}
+      {%if data == "High signs of depression "%} 
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBI9CAx9LNEWM48xUW4ddCkg&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+     
+     {%elif data == "Medium/High "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBJpF3c2wAv4xfuE8vD2B51Z&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "Low signs of despression "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBL0S2SEEBnRM16x8yzz6E5I&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%elif data == "very Low/low Signs "%}
+
+      <a href="https://music.youtube.com/playlist?list=PLruOYdHlYTBIQbbDAEK7zJrVj1oyWgUYQ&feature=share" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%else%}
+      <a href="#" class="btn btn-lg btn-secondary" style="background-color: #E4542A; color: white; border-color:#E4542A">View here</a>
+
+      {%endif%}
+
+       {%endif%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </p>
+                </div>
+                
+    <br>
+
+</form>
+</main>
+	
+  <footer class="mt-auto text-white-50">
+    <p>All rights reserved</p>
+  </footer>
+  
+
+  
+</div>
+
+
+    
+  </body>
+</html>
