@@ -128,6 +128,7 @@ def main1():
 @app.route('/predict', methods= ['POST'])
 def index():
     global name
+    global pred
     name= request.form['name'].capitalize()
     age= request.form['age']
     stud_hr= request.form['stud_hr']
@@ -152,9 +153,9 @@ def index():
                 positive,breath_diff,initiate,tremb,worry,look_fwd,down,enthus,
                 life_mean,scared]])
         ), columns=X_train.columns)    
-    index.pred= modl.predict(arr)
+    pred= modl.predict(arr)
 
-    return render_template('after.html', data=index.pred ,
+    return render_template('after.html', data=pred ,
        name = name)
     
 
@@ -162,7 +163,7 @@ def index():
 def music():
     music= request.form['music']
     #name = name 
-    data=index.pred
+    data=pred
     return render_template('music.html', music=music, name = name,  data=data)
 
 
