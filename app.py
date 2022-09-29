@@ -113,6 +113,8 @@ def pick_best_estimator():
 best_estimators = pick_best_estimator()
 
 modl =  best_estimators['Random Forest Classifier'][0]
+name = None
+pred = None
 
 
 
@@ -127,7 +129,9 @@ def main1():
 
 @app.route('/predict', methods= ['POST'])
 def index():
-    global name= request.form['name'].capitalize()
+    global name
+    global pred
+    name = request.form['name'].capitalize()
     age= request.form['age']
     stud_hr= request.form['stud_hr']
     employed= request.form['employed']
@@ -151,7 +155,7 @@ def index():
                 positive,breath_diff,initiate,tremb,worry,look_fwd,down,enthus,
                 life_mean,scared]])
         ), columns=X_train.columns)    
-    global pred= modl.predict(arr)
+    pred= modl.predict(arr)
 
     return render_template('after.html', data=pred ,
        name = name)
@@ -159,6 +163,8 @@ def index():
 
 @app.route('/music', methods= ['POST'])
 def music():
+    global name
+    global pred
     music= request.form['music']
     #name = name 
     #data=pred
