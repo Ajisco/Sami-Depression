@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, session
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder, StandardScaler
@@ -15,7 +15,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 
 app= Flask(__name__)
-
+app.secret_key = 'poisawoud24e21cjn!Ew@@dsa5'
 
 df = pd.read_csv('data.csv')
 # Rename the columns
@@ -129,8 +129,6 @@ def main1():
 
 @app.route('/predict', methods= ['POST'])
 def index():
-    global name
-    global pred
     name = request.form['name'].capitalize()
     age= request.form['age']
     stud_hr= request.form['stud_hr']
@@ -156,6 +154,8 @@ def index():
                 life_mean,scared]])
         ), columns=X_train.columns)    
     pred= modl.predict(arr)
+    session["name"]=name
+    session["pred"]=pred
 
     return render_template('after.html', data=pred ,
        name = name)
@@ -166,10 +166,10 @@ def music():
     #global name
     #global pred
     music= request.form['music']
-    #name = name 
-    #data=pred
+    name = session.get("name",None)
+    data= session.get("pred",None)
     return render_template('music.html', music=music, name = name,  data=pred)
 
 
 if __name__ == '__main__':
-    app.run(debug= False, use_reloader=False)
+    app.run(debug= True, use_reloader=False)
