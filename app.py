@@ -113,8 +113,8 @@ def pick_best_estimator():
 best_estimators = pick_best_estimator()
 
 modl =  best_estimators['Random Forest Classifier'][0]
-name = None
-pred = None
+#name = None
+#pred = None
 
 
 
@@ -161,10 +161,10 @@ def index():
        name = name)
     
 
-@app.route('/music', methods= ['POST'])
+#@app.route('/music', methods= ['POST'])
 def music():
-    global name
-    global pred
+    #global name
+    #global pred
     music= request.form['music']
     #name = name 
     #data=pred
