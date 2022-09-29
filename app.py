@@ -161,7 +161,7 @@ def index():
        name = name)
     
 
-#@app.route('/music', methods= ['POST'])
+@app.route('/music', methods= ['POST'])
 def music():
     #global name
     #global pred
