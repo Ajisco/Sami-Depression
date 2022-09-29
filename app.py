@@ -163,8 +163,8 @@ def index():
 def music():
     music= request.form['music']
     #name = name 
-    data=pred
-    return render_template('music.html', music=music, name = name,  data=data)
+    #data=pred
+    return render_template('music.html', music=music, name = name,  data=pred)
 
 
 if __name__ == '__main__':
