@@ -155,7 +155,7 @@ def index():
         ), columns=X_train.columns)    
     pred= modl.predict(arr)
     session["name"]=name
-    session["pred"]=pred
+    session["pred"]=pred.tolist()
 
     return render_template('after.html', data=pred ,
        name = name)
