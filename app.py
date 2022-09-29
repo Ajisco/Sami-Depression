@@ -167,7 +167,7 @@ def music():
     #global pred
     music= request.form['music']
     name = session.get("name",None)
-    data= session.get("pred",None)
+    pred= session.get("pred",None)
     return render_template('music.html', music=music, name = name,  data=pred)
 
 
