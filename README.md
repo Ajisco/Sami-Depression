@@ -14,6 +14,7 @@ It is a well-known, evidence-based therapy in the medical field.
 ## 📍 Objective 
 The aim of this project is to build an AI solution that uses machine learning algorithms to diagnose depression and classify it to the severity class,
 then provide a solution with music therapy.
+<br><br><br>
 
 ## 📍 Data
 The dataset was in a tabular (CSV) format and was gotten from a research studies, which was subsequently cleaned and wrangled in preparation for machine learning.<br><br><br>
@@ -38,6 +39,7 @@ The dataset was in a tabular (CSV) format and was gotten from a research studies
 | | 
 |:-|
 | <img alt="Sami" src="https://github.com/Ajisco/Ajisco/blob/main/Videos/Sami.gif">|
+
 <br><br><br>
 
 
@@ -70,6 +72,7 @@ The dataset was in a tabular (CSV) format and was gotten from a research studies
 ## 📍 To improve
 1. I would love to improve the dataset in size and quality.
 2. I would love to add more musucs and do more research to link the other genres of music.
+<br><br><br>
 
 ## 📍 Open to collaboration
 You can  create a pull request wit detailed explanation if you wiould love to work more on this, or contact me through:
