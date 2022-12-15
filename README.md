@@ -40,19 +40,19 @@ The dataset was in a tabular (CSV) format and was gotten from a research studies
 |:-|
 | <img alt="Sami" src="https://github.com/Ajisco/Ajisco/blob/main/Videos/Sami.gif">|
 
-<br><br><br>
+<br><br>
 
 
 ## 📍 Notebook
 #### This Jupyter notebook containing some exploratory analysis, model training and evaluation can be found [Here](https://github.com/Ajisco/Sami-Depression/blob/master/Jupyter_Notebook.ipynb) <br><br><br>
 
-## 📍 App FEATURES 
+## 📍 App Features
 1. Has a section to fill form of syptoms and data.
 2. Machine learning diagnoses the depression and classifies it.
 3. There is an option to pick a song genre of choice.
 4. An algorithm was used to provide a song list (from Youtube music API) that connects the depression type and the music genre of choice.
-2. Has a link to a site for more information.
-3. Web app compatible by every device. <br><br><br>
+5. Has a link to a site for more information.
+6. Web app compatible by every device. <br><br><br>
 
 
 
@@ -66,8 +66,8 @@ The dataset was in a tabular (CSV) format and was gotten from a research studies
 
 ## 📍 Limitations
 1. The dataset used was not large enough and can't be said to have generalized well despite the high metric values.
-2. The app starts slowly due to the free cloud service used (Render) 
-3. Some musics are gyet to be added  and app might not contain all genres of musics yet. <br><br><br>
+2. The app starts slowly due to the free cloud service used (Render).
+3. Some musics are yet to be added and app might not contain all genres of musics yet. <br><br><br>
 
 ## 📍 To improve
 1. I would love to improve the dataset in size and quality.
