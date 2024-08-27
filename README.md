@@ -7,7 +7,7 @@
 Music Therapy for Depression is a cutting-edge AI application designed to diagnose depression and recommend music therapy solutions. The app leverages machine learning algorithms to classify the severity of depression based on user input and suggests therapeutic music.
 
 ---
-# Click [Here](https://sami.onrender.com/) to try app! 🚀
+# 📍 Click [Here](https://sami.onrender.com/) to try app! 🚀
 ---
 ## 📍 VIDEO DEMO
 
